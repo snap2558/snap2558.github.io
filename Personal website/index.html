@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kyzr Snapko</title>
+  <link rel = "stylesheet" type="text/css" href = "/Users/kyzrsnapko/Desktop/website/Personal website/style.css">
+</head>
+<body>
+
+<div class = "background">
+
+<div class = "navigate">
+  <a class = "a active" href="#">HOME</a>
+  <a class = "b" href="#">RESUME</a>
+  <a class = "c" href="#">PROJECTS</a>
+</div>
+
+<div class = "content">
+
+  <div class = "home">
+      <img src = "img/selfie.jpeg" />
+      <h1>Kyzr Snapko</h1>
+      <h3>Computer Science</h3>
+      <div id = "output">Nothing yet</div>
+      <script type = "text/javascript"src = "/Users/kyzrsnapko/Desktop/website/Personal website/sketch.js"></script>
+  </div>
+
+  <div class = "resume">
+    <p><b>Kyzr Snapko</br>
+112 Cleveland Ave. N, Saint Paul, MN 55104</br>
+(612) 325-0551</br> snap2558@stthomas.edu</b></br></p>
+
+</br><h3>Education</h3>
+University of Saint Thomas, Saint Paul, MN</br>
+Bachelor of Science in Computer Science</br>
+Relevant Coursework: Computer Architecture, Data Structures, Web Development, Information Security, Algorithms, and Discrete Mathematics</br>
+Clubs: University of Saint Thomas Computer Science Club
+
+<h3>Experience</h3>
+
+<b>Object Oriented Design & Programing Class:</b></br>
+•	Used Java and the Eclipse IDE to program a multitude of applications throughout the semester</br>
+•	Programed a simple videogame with Java code</br>
+
+<b>Assistant Film Production:</b></br>
+•	Worked in-depth with film and audio editing software, mostly final cut</br>
+•	Coordinated with film crew onset</br>
+
+<b>On Campus Post Office Clerk:</b></br>
+•	Assist students with locating and shipping packages</br>
+•	Deliver mail to campus administrative buildings</br>
+•	Frequent use of campus mail database</br>
+
+<h3>Technical Skills</h3>
+
+Highly Proficient with Java, C and Python</br>
+Knowledgeable with HTML and CSS</br>
+Adept with Microsoft Office Suite</br>
+Advanced knowledge of statistics and statistical software such as MiniTab and R Studio</br>
+Knowledge of computer architecture and machine code</br>
+
+<h3>Other Experience</h3>
+
+PCA for a child with special needs</br>
+Eagle Scout in Boy Scouts of America</br>
+Black Belt in Karate</br>
+Mounds View High School Football</br>
+Mounds View High School Wrestling</br>
+</p>
+  </div>
+
+  <div class="projects">
+    <div class = "image">
+      <h1> Machine Code</h1>
+      <img src = "img/assembler.png" />
+    </div>
+    <div class = "image">
+      <h1> Binary Tree</h1>
+      <img src = "img/binaryTree.png" />
+    </div>
+    <div class = "image">
+      <h1> Theo Project</h1>
+      <img src = "img/Theo.png" />
+    </div>
+    <div class = "image">
+      <h1> Algo Notes</h1>
+      <img src = "img/algo.png" />
+    </div>
+    <div class = "image">
+      <h1> Sample Program</h1>
+      <img src = "img/sample.png" />
+    </div>
+    <div class = "image">
+      <h1> Placeholder</h1>
+      <img src = "img/test.jpeg" />
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script type = "text/javascript" src = "/Users/kyzrsnapko/Desktop/website/Personal website/script.js"></script>
+<script type = "text/javascript">
+
+  $(document).ready(function(){
+    $('a').click(function(){
+      var selected = $(this);
+      $('a').removeClass('active');
+      $(selected).addClass('active');
+    });
+
+    var $a = $('.a'),
+    $b = $('.b'),
+    $c = $('.c')
+    $home = $('.home'),
+    $resume = $('.resume');
+    $projects = $('.projects')
+
+    $a.click(function(){
+      $home.fadeIn();
+      $resume.fadeOut();
+      $projects.fadeOut();
+    });
+    $b.click(function(){
+      $resume.fadeIn();
+      $home.fadeOut();
+      $projects.fadeOut();
+    });
+    $c.click(function(){
+      $projects.fadeIn();
+      $home.fadeOut();
+      $resume.fadeOut();
+    });
+
+  });
+
+</script>
+
+
+</body>
+</html>
